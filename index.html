@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+     </header>
+     <!-- HOME SECTION DESIGN -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, My Name</h3>
+            <h1>Raja Nayak</h1>
+            <h3>And I'm a <span id="multiple-text"></span></h3>
+            <br>
+            <p>I'm currently in my final year of my Master's degree in MCA from Biju Patnaik University of Technology in Odisha. During my studies, I have developed a strong foundation in programming and software development, learning language such as HTML, CSS, JavaScript, Java, and Frameworks like Spring Boot and React Js...</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/raja.nayak.311493" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/rajanayak45" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/raja.nayak.6/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/raja-nayak-0b16b2241/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="images/Raja_resume.pdf" target="_blank
+            " class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./images/raja24.jpg" alt="">
+        </div>
+     </section>
+     <script>
+        // Initialize Typed.js after the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const typed = new Typed('#multiple-text', {
+                strings: ['Fulstack Java Developer','Frontend Developer', 'Database Management Systems'],
+                typeSpeed: 70,
+                backSpeed: 70,
+                backDelay: 700,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|',
+                contentType: 'text'
+            });
+        });
+    </script>
+
+     <!-- ABOUT SECTION -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/raja24.jpg" alt="about_pic">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>
+                <ul>
+                    <li>Hi, I'm Raja Nayak, a passionate Fullstack Java Developer currently pursuing my MCA. I specialize in building dynamic and responsive web applications that deliver real-world solutions. Whether it's crafting an intuitive e-commerce platform, designing a sleek personal portfolio, or developing a streamlined hotel management system, I thrive on turning complex challenges into creative solutions.</li> <br>
+                    <li>With hands-on experience in both front-end and back-end development, I work with a wide range of technologies including Java, HTML, CSS, JavaScript, and frameworks like Spring and Hibernate. I’m particularly excited about the process of bringing an idea to life — from the initial concept to a fully functional, user-friendly application.</li> <br>
+                    <li>If you're looking for a developer who is committed to delivering high-quality work and passionate about solving problems, feel free to browse my projects and get in touch. I’m always open to new challenges and opportunities to grow.</li>
+                </ul>
+            </p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+     </section>
+
+     <!-- SERVICES SECTION DESIGN  -->
+     <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>We Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui est temporibus, blanditiis dolores, nihil atque quae quam animi porro fugit delectus error perspiciatis ad similique molestiae nostrum aperiam rerum.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui est temporibus, blanditiis dolores, nihil atque quae quam animi porro fugit delectus error perspiciatis ad similique molestiae nostrum aperiam rerum.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis qui est temporibus, blanditiis dolores, nihil atque quae quam animi porro fugit delectus error perspiciatis ad similique molestiae nostrum aperiam rerum.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- PORTFOLIO SECTION DESIGN  -->
+     <SECtion class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/Screenshot 2024-11-10 154817.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>e-commerce</h4>
+                    <p>create e-commerce website using HTML,CSS,JS. i create Home, about,Contact & Cart button</p>
+                    <a href="https://rajaecommerce21.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./images/expension tracker.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Expension Tracker</h4>
+                    <p>create expension tracker by using HTML,CSS,Js. show Total balace,show expence & income balance,show tranction history, add new tranction. If you added +ve number then this is your Income balance then if you enter -ve value this is your Expension balance.</p>
+                    <a href="https://rajaexpensiontracker.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./images/hotel.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Hotel web page design</h4>
+                    <p>I create hotel webpage. create animation of recipes items</p>
+                    <a href="https://backbanchers45.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="portfolio-box">
+                <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div> -->
+        </div>
+     </SECtion>
+
+     <!-- CONTACT DESIGN  -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <div class="contact1">
+                <div id="contact1">
+                    <p><i class="fa-regular fa-paper-plane"></i>rajanayakaa52@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>+91 7735721447</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/raja.nayak.311493" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/rajanayak45" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/raja.nayak.6/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/raja-nayak-0b16b2241/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+               
+                <form action="#" name="submit-to-google-sheet">
+                    <div class="input-box">
+                        <input type="text" name="Name" placeholder="Full Name">
+                        <input type="email" name="Email" placeholder="Email Address">
+                    </div>
+    
+                    <div class="input-box">
+                        <input type="number" name="Mobil-number" placeholder="Mobile Number">
+                        <input type="text" name="Email-subject" placeholder="Email Subject">
+                        <textarea name="your-message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <!-- <input type="submit" value="Send Message" class="btn"> -->
+                        <button type="submit" class="btn">submit</button>
+                    </div>
+                </form>
+            </div>
+            
+
+            
+            <span id="msg"></span>
+        </section>
+
+      <!-- FOOTER DESIGN  -->
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by RajaNayak | All Right Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+
+        <!-- scroll reveal javascript -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+
+        <!-- TYPED ANIMATION -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- google spreads stylesheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxL4kYp9bBOZUlYJnIubQjukz89A8JOlpVr1Cre_AOjeXsqRxsLFiLbsV17JBbzFLM1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+      </script>
+</body>
+</html>
